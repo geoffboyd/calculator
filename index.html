@@ -1,0 +1,101 @@
+<html>
+	<head>
+		<title>Calculator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js" type="text/javascript"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="main.js" type="text/javascript" ></script>
+	</head>
+	<body>
+		<div class="container-fluid unselectable">
+			<p><p></p></p>
+			<div class="row">
+				<div class="calc-outline col-xs-offset-2 col-xs-8 col-xs-offset-2 col-md-offset-4 col-md-4 col-md-4">
+					<div class="row">
+						<div class="col-xs-offset-1 col-xs-10 col-xs-offset-1 title">FreeCodeCamp</div>					
+					</div>
+					<div class="row">
+						<div id="screen" class="col-xs-offset-1 col-xs-10 col-xs-offset-1 screen"></div>					
+					</div>
+					<div class="row">
+						<div id="ac" class="col-xs-3 button" onclick="buttonAC()" onmousedown="buttonPressed('ac')" onmouseup="buttonUnpressed('ac')">
+							AC
+						</div>
+						<div id="c" class="col-xs-3 button" onclick="buttonC()" onmousedown="buttonPressed('c')" onmouseup="buttonUnpressed('c')">
+							C
+						</div>
+						<div id="percent" class="col-xs-3 button" onclick="buttonPercent()" onmousedown="buttonPressed('percent')" onmouseup="buttonUnpressed('percent')">
+							%
+						</div>
+						<div id="sqrt" class="col-xs-3 button" onclick="buttonSqrt()" onmousedown="buttonPressed('sqrt')" onmouseup="buttonUnpressed('sqrt')">
+							&radic;
+						</div>
+					</div> <!-- first button row -->
+					<div class="row">
+						<div id="7" class="col-xs-3 button" onclick="buttonNumber('7')" onmousedown="buttonPressed('7')" onmouseup="buttonUnpressed('7')">
+							7
+						</div>
+						<div id="8" class="col-xs-3 button" onclick="buttonNumber('8')" onmousedown="buttonPressed('8')" onmouseup="buttonUnpressed('8')">
+							8
+						</div>
+						<div id="9" class="col-xs-3 button" onclick="buttonNumber('9')" onmousedown="buttonPressed('9')" onmouseup="buttonUnpressed('9')">
+							9
+						</div>
+						<div id="divide" class="col-xs-3 button" onclick="buttonDivide()" onmousedown="buttonPressed('divide')" onmouseup="buttonUnpressed('divide')">
+							&divide;
+						</div>
+					</div> <!-- second button row -->
+					<div class="row">
+						<div id="4" class="col-xs-3 button" onclick="buttonNumber('4')" onmousedown="buttonPressed('4')" onmouseup="buttonUnpressed('4')">
+							4
+						</div>
+						<div id="5" class="col-xs-3 button" onclick="buttonNumber('5')" onmousedown="buttonPressed('5')" onmouseup="buttonUnpressed('5')">
+							5
+						</div>
+						<div id="6" class="col-xs-3 button" onclick="buttonNumber('6')" onmousedown="buttonPressed('6')" onmouseup="buttonUnpressed('6')">
+							6
+						</div>
+						<div id="multiply" class="col-xs-3 button" onclick="buttonMultiply()" onmousedown="buttonPressed('multiply')" onmouseup="buttonUnpressed('multiply')">
+							X
+						</div>
+					</div> <!-- third button row -->
+					<div class="row">
+						<div id="1" class="col-xs-3 button" onclick="buttonNumber('1')" onmousedown="buttonPressed('1')" onmouseup="buttonUnpressed('1')">
+							1
+						</div>
+						<div id="2" class="col-xs-3 button" onclick="buttonNumber('2')" onmousedown="buttonPressed('2')" onmouseup="buttonUnpressed('2')">
+							2
+						</div>
+						<div id="3" class="col-xs-3 button" onclick="buttonNumber('3')" onmousedown="buttonPressed('3')" onmouseup="buttonUnpressed('3')">
+							3
+						</div>
+						<div id="minus" class="col-xs-3 button" onclick="buttonMinus()" onmousedown="buttonPressed('minus')" onmouseup="buttonUnpressed('minus')">
+							-
+						</div>
+					</div> <!-- fourth button row -->
+					<div class="row">
+						<div id="0" class="col-xs-3 button" onclick="buttonNumber('0')" onmousedown="buttonPressed('0')" onmouseup="buttonUnpressed('0')">
+							0
+						</div>
+						<div id="decimal" class="col-xs-3 button" onclick="buttonDecimal()" onmousedown="buttonPressed('decimal')" onmouseup="buttonUnpressed('decimal')">
+							.
+						</div>
+						<div id="equals" class="col-xs-3 button" onclick="buttonEquals()" onmousedown="buttonPressed('equals')" onmouseup="buttonUnpressed('equals')">
+							=
+						</div>
+						<div id="plus" class="col-xs-3 button" onclick="buttonPlus()" onmousedown="buttonPressed('plus')" onmouseup="buttonUnpressed('plus')">
+							+
+						</div>
+					</div> <!-- fifth button row -->
+				</div>
+			</div> <!-- end of calculator row div -->	
+			<p></p>
+			<div class="tagline">My calc it brings all the nerds to the yard</div>
+		</div> <!-- end of container-fluid -->
+	</body>
+</html>
