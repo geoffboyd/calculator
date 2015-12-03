@@ -1,16 +1,12 @@
-var storedValue = [];
-var storedFunction = [];
-var calcComplete = true;
-var isDecimal = false;
-
+var storedValue = [], storedFunction = [], calcComplete = true, isDecimal = false;
 function buttonNumber(num) {
 	if (calcComplete == true) {
 		document.getElementById("screen").innerHTML = "";
 		isDecimal = false;
 		calcComplete = false;	
 	}
-	var screenItemsLength = document.getElementById("screen").innerHTML.length
-	var screenItems = document.getElementById("screen").innerHTML
+	var screenItemsLength = document.getElementById("screen").innerHTML.length;
+	var screenItems = document.getElementById("screen").innerHTML;
 	if (screenItemsLength < 10) {
 		screenItems = screenItems + num;
 		document.getElementById("screen").innerHTML = screenItems;
@@ -29,10 +25,10 @@ function buttonC() {
 	isDecimal = false;
 }
 function buttonPercent() {
-	var screenItems = document.getElementById("screen").innerHTML
-	screenItems = (screenItems/100)
+	var screenItems = document.getElementById("screen").innerHTML;
+	screenItems = (screenItems/100);
 	if (String(screenItems) > 10) {
-		screenItems = screenItems.toPrecision(8)
+		screenItems = screenItems.toPrecision(8);
 	}
 	if (String(screenItems).indexOf(".") !== -1){	
 		isDecimal = true;
@@ -105,7 +101,7 @@ function buttonDecimal() {
 	if (calcComplete == true) {
 		calcComplete = false;
 	}
-	screenItems = document.getElementById("screen").innerHTML
+	screenItems = document.getElementById("screen").innerHTML;
 	if (isDecimal == false && screenItems.length < 10) {
 		document.getElementById("screen").innerHTML = screenItems + ".";
 		isDecimal = true;
